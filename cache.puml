@@ -1,0 +1,17 @@
+@startuml
+title model
+
+package Shop {
+  class Customer {
+    +customer_id: int
+    +place_order(): bool
+  }
+  
+  class Product {
+    +name: String
+    +price: float
+    +is_available: bool
+    +change_product_data(): bool
+  }
+}
+@enduml
